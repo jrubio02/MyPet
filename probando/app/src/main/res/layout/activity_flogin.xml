@@ -11,14 +11,15 @@
         android:id="@+id/textView4"
         android:layout_width="364dp"
         android:layout_height="78dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="56dp"
         android:fontFamily="sans-serif-black"
         android:text="Inicia Sesión"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -28,17 +29,17 @@
         android:layout_height="129dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.026"
         app:srcCompat="@drawable/mypet" />
 
     <Button
         android:id="@+id/btnRegistro"
         android:layout_width="239dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="124dp"
         android:backgroundTint="#73F08E"
         android:text="Continuar"
         android:textColor="#000000"
@@ -46,7 +47,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.863" />
 
     <Button
         android:id="@+id/enlace_registro"
@@ -59,12 +61,13 @@
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegistro"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintVertical_bias="0.181" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="362dp"
         android:layout_height="156dp"
         android:orientation="vertical"
@@ -73,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446">
+        app:layout_constraintVertical_bias="0.563">
 
         <EditText
             android:id="@+id/editTextTextPersonName"
@@ -82,13 +85,12 @@
 
             android:layout_marginBottom="80px"
             android:backgroundTint="#73F08E"
-            android:textColorHint="#73F08E"
-            android:hint="Inicia Sesión"
             android:ems="10"
-
+            android:hint="Inicia Sesión"
             android:inputType="textPersonName"
+
             android:textColor="#8BC34A"
-            />
+            android:textColorHint="#73F08E" />
 
         <EditText
             android:id="@+id/editTextTextPassword2"

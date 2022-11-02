@@ -11,17 +11,19 @@
         android:id="@+id/textView3"
         android:layout_width="314dp"
         android:layout_height="73dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="148dp"
         android:fontFamily="sans-serif-black"
         android:text="En MyPet podrás ver cientos de animales que buscan un hogar y dar en adopción animales para darles un nuevo hogar."
 
         android:textAlignment="center"
         android:textColor="#B0B0B0"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnadoptar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
@@ -34,37 +36,22 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.628" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="387dp"
         android:layout_height="251dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnadoptar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/mypet" />
-
-    <Button
-        android:id="@+id/btnadoptar"
-        android:layout_width="131dp"
-        android:layout_height="57dp"
-
-
-        android:layout_marginStart="56dp"
-        android:backgroundTint="#00757575"
-        android:text="Adoptar"
-        android:textColor="#73F08E"
-        app:cornerRadius="50px"
-        app:iconTint="#B1B1B1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.201"
-        app:strokeColor="#73F08E"
-        app:strokeWidth="7px" />
 
     <Button
         android:id="@+id/button2"
@@ -80,10 +67,30 @@
         app:iconTint="#B1B1B1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toEndOf="@+id/btnadoptar"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.203"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845"
+        app:strokeColor="#73F08E"
+        app:strokeWidth="7px" />
+
+    <Button
+        android:id="@+id/btnadoptar"
+        android:layout_width="131dp"
+        android:layout_height="57dp"
+
+
+        android:backgroundTint="#00757575"
+        android:text="Adoptar"
+        android:textColor="#73F08E"
+        app:cornerRadius="50px"
+        app:iconTint="#B1B1B1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845"
         app:strokeColor="#73F08E"
         app:strokeWidth="7px" />
 
