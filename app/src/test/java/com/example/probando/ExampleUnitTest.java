@@ -1,4 +1,4 @@
-package com.example.mypet;
+package com.example.probando;
 
 import org.junit.Test;
 

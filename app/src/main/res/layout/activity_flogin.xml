@@ -35,20 +35,6 @@
         app:srcCompat="@drawable/mypet" />
 
     <Button
-        android:id="@+id/btncontinuar"
-        android:layout_width="239dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="128dp"
-        android:backgroundTint="#73F08E"
-        android:text="Continuar"
-        android:textColor="#000000"
-        app:cornerRadius="30px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-      />
-
-    <Button
         android:id="@+id/enlace_registro"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="178dp"
@@ -59,10 +45,10 @@
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btncontinuar"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
 
     <LinearLayout
         android:layout_width="362dp"
@@ -76,22 +62,21 @@
         app:layout_constraintVertical_bias="0.446">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/txtEmailLogin"
             android:layout_width="match_parent"
             android:layout_height="62dp"
 
             android:layout_marginBottom="80px"
             android:backgroundTint="#73F08E"
-            android:textColorHint="#73F08E"
-            android:hint="Inicia Sesión"
             android:ems="10"
-
+            android:hint="Inicia Sesión"
             android:inputType="textPersonName"
-            android:textColor="#8BC34A"
-            />
+
+            android:textColor="#73F08E"
+            android:textColorHint="#73F08E" />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/txtPasswordLogin"
             android:layout_width="match_parent"
             android:layout_height="64dp"
 
@@ -99,8 +84,24 @@
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword"
+            android:textColor="#73F08E"
             android:textColorHint="#73F08E" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="239dp"
+        android:layout_height="54dp"
+
+        android:backgroundTint="#73F08E"
+        android:text="Continuar"
+        android:textColor="#000000"
+        app:cornerRadius="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
